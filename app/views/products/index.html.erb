@@ -3,7 +3,25 @@
 <h1>Portal Products</h1>
 
 <div id="products">
-  <% @products.each do |product| %>
-    <%= render product %>
-  <% end %>
+  <table>
+    <thead>
+      <tr>
+        <th>
+          <strong>Name</strong>
+        </th>
+
+        <th>
+          <strong>Stock qty</strong>
+        </th>
+        <th>
+          <strong>Price</strong>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @products.each do |product| %>
+        <%= render product %>
+      <% end %>
+    </tbody>
+  </table>
 </div>
